@@ -1,0 +1,6 @@
+Species,Local Name,Temperature (°C),Humidity (%),Area (m²),CS (tons/ha),O2 (tons/ha)
+Neem,Azadirachta indica,25,40,10,1.2,0.8
+Peepal,Ficus religiosa,30,50,15,2.0,1.5
+Mango,Mangifera indica,28,45,12,1.8,1.2
+Banyan,Ficus benghalensis,27,60,20,2.5,1.8
+Ashoka,Polyalthia longifolia,26,55,8,1.1,0.9

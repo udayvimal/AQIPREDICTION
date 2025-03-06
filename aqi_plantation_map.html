@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2eb20aa042788bb2b5f8af6a2741a830 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2eb20aa042788bb2b5f8af6a2741a830" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2eb20aa042788bb2b5f8af6a2741a830 = L.map(
+                "map_2eb20aa042788bb2b5f8af6a2741a830",
+                {
+                    center: [25.867821471963147, 77.54550785566404],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_82ab00fb7db908daa3d3a4b553c88e93 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_82ab00fb7db908daa3d3a4b553c88e93.addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var marker_0adc4fe65afeb0c7e156f1c09d02043f = L.marker(
+                [28.815691, 77.152491],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_4002520da15fe88849a882f0e05466e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0adc4fe65afeb0c7e156f1c09d02043f.setIcon(icon_4002520da15fe88849a882f0e05466e6);
+        
+    
+        var popup_a58567fed514a65ff8ab724b5e9eb876 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b13bc9f376748819d9f52c63b9463a93 = $(`<div id="html_b13bc9f376748819d9f52c63b9463a93" style="width: 100.0%; height: 100.0%;">             <b>📍 Alipur, Delhi, Delhi, India</b><br>             <b>AQI:</b> 163.0<br>             <b>Temperature:</b> 15.4°C<br>             <b>Humidity:</b> 50.0%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_a58567fed514a65ff8ab724b5e9eb876.setContent(html_b13bc9f376748819d9f52c63b9463a93);
+            
+        
+
+        marker_0adc4fe65afeb0c7e156f1c09d02043f.bindPopup(popup_a58567fed514a65ff8ab724b5e9eb876)
+        ;
+
+        
+    
+    
+            var marker_da6ce9c7a70014d0b97fafb8191a174b = L.marker(
+                [28.820629, 77.101099],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_43a4b5717ed8536dd0d2b8dd91a06496 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_da6ce9c7a70014d0b97fafb8191a174b.setIcon(icon_43a4b5717ed8536dd0d2b8dd91a06496);
+        
+    
+        var popup_d79da6fd21c6208dbc2eeb507842c802 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b37f5868ede23bda7d6391e7496fe744 = $(`<div id="html_b37f5868ede23bda7d6391e7496fe744" style="width: 100.0%; height: 100.0%;">             <b>📍 Narela, Delhi, Delhi, India</b><br>             <b>AQI:</b> 168.0<br>             <b>Temperature:</b> 14.850000000000001°C<br>             <b>Humidity:</b> 54.375%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_d79da6fd21c6208dbc2eeb507842c802.setContent(html_b37f5868ede23bda7d6391e7496fe744);
+            
+        
+
+        marker_da6ce9c7a70014d0b97fafb8191a174b.bindPopup(popup_d79da6fd21c6208dbc2eeb507842c802)
+        ;
+
+        
+    
+    
+            var marker_34eb936bb3c4e74bc7028cbcc1185b7c = L.marker(
+                [28.61104167, 77.03733056],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_29401fe9332f29e07d647e1654c38c32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_34eb936bb3c4e74bc7028cbcc1185b7c.setIcon(icon_29401fe9332f29e07d647e1654c38c32);
+        
+    
+        var popup_75dafa7bec8476efa7327abeb72e0b21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c9235ef6bc285dabe00ad8743bc0d69 = $(`<div id="html_9c9235ef6bc285dabe00ad8743bc0d69" style="width: 100.0%; height: 100.0%;">             <b>📍 Dwarka, Delhi, Delhi, India</b><br>             <b>AQI:</b> 139.35714285714286<br>             <b>Temperature:</b> 32.0°C<br>             <b>Humidity:</b> 62.0%<br>             <b>🌿 Recommended Tree:</b> Peepal (Ficus religiosa)         </div>`)[0];
+                popup_75dafa7bec8476efa7327abeb72e0b21.setContent(html_9c9235ef6bc285dabe00ad8743bc0d69);
+            
+        
+
+        marker_34eb936bb3c4e74bc7028cbcc1185b7c.bindPopup(popup_75dafa7bec8476efa7327abeb72e0b21)
+        ;
+
+        
+    
+    
+            var marker_5cd6054ace7480d9c1982190bb90b876 = L.marker(
+                [28.68241, 77.030469],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_955886bf8abfd49536a8200c9868f3a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5cd6054ace7480d9c1982190bb90b876.setIcon(icon_955886bf8abfd49536a8200c9868f3a7);
+        
+    
+        var popup_e48fa387adb1d995072c3c4e99b6232c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bc911059c082c2b6c3895d32283960f = $(`<div id="html_6bc911059c082c2b6c3895d32283960f" style="width: 100.0%; height: 100.0%;">             <b>📍 Mundka, Delhi, Delhi, India</b><br>             <b>AQI:</b> 171.0<br>             <b>Temperature:</b> 16.25°C<br>             <b>Humidity:</b> 51.150000000000006%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_e48fa387adb1d995072c3c4e99b6232c.setContent(html_6bc911059c082c2b6c3895d32283960f);
+            
+        
+
+        marker_5cd6054ace7480d9c1982190bb90b876.bindPopup(popup_e48fa387adb1d995072c3c4e99b6232c)
+        ;
+
+        
+    
+    
+            var marker_d68356a9ab363012cfd74e725fc8ca3a = L.marker(
+                [28.68189167, 77.30485833],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_dbe878f076b8cf74db8421faf87d50c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d68356a9ab363012cfd74e725fc8ca3a.setIcon(icon_dbe878f076b8cf74db8421faf87d50c4);
+        
+    
+        var popup_d3331290285f387f435b3d76d3316e14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fc0de4135d4fe02d41a0924cef1005a = $(`<div id="html_2fc0de4135d4fe02d41a0924cef1005a" style="width: 100.0%; height: 100.0%;">             <b>📍 IHBAS, Delhi, Delhi, India</b><br>             <b>AQI:</b> 139.35714285714286<br>             <b>Temperature:</b> 34.0°C<br>             <b>Humidity:</b> 52.0%<br>             <b>🌿 Recommended Tree:</b> Peepal (Ficus religiosa)         </div>`)[0];
+                popup_d3331290285f387f435b3d76d3316e14.setContent(html_2fc0de4135d4fe02d41a0924cef1005a);
+            
+        
+
+        marker_d68356a9ab363012cfd74e725fc8ca3a.bindPopup(popup_d3331290285f387f435b3d76d3316e14)
+        ;
+
+        
+    
+    
+            var marker_80365258f73af74279d033638a544b8d = L.marker(
+                [28.5648, 77.1744],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_3b8d52da6ddd85e04ff28a65822aca53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_80365258f73af74279d033638a544b8d.setIcon(icon_3b8d52da6ddd85e04ff28a65822aca53);
+        
+    
+        var popup_4e5c5c15d1d5a6c99eea9641eb402a49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ec68cfc3260cb64a53432586f76d11e = $(`<div id="html_4ec68cfc3260cb64a53432586f76d11e" style="width: 100.0%; height: 100.0%;">             <b>📍 R.K. Puram, Delhi, Delhi, India</b><br>             <b>AQI:</b> 154.0<br>             <b>Temperature:</b> 20.9°C<br>             <b>Humidity:</b> 41.9%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_4e5c5c15d1d5a6c99eea9641eb402a49.setContent(html_4ec68cfc3260cb64a53432586f76d11e);
+            
+        
+
+        marker_80365258f73af74279d033638a544b8d.bindPopup(popup_4e5c5c15d1d5a6c99eea9641eb402a49)
+        ;
+
+        
+    
+    
+            var marker_bccbc6bca79d2ddd1f7be2431232982d = L.marker(
+                [28.636997, 77.172248],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_c058a985805377b7e31d681cf80118f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bccbc6bca79d2ddd1f7be2431232982d.setIcon(icon_c058a985805377b7e31d681cf80118f5);
+        
+    
+        var popup_ce1a6b06fbffc5e07c46adadd561f2ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6542bacb747b9b6906b972fb43876535 = $(`<div id="html_6542bacb747b9b6906b972fb43876535" style="width: 100.0%; height: 100.0%;">             <b>📍 Pusa, Delhi, Delhi, India</b><br>             <b>AQI:</b> 158.0<br>             <b>Temperature:</b> 18.533333333333335°C<br>             <b>Humidity:</b> 41.13333333333333%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_ce1a6b06fbffc5e07c46adadd561f2ef.setContent(html_6542bacb747b9b6906b972fb43876535);
+            
+        
+
+        marker_bccbc6bca79d2ddd1f7be2431232982d.bindPopup(popup_ce1a6b06fbffc5e07c46adadd561f2ef)
+        ;
+
+        
+    
+    
+            var marker_e7aa66e35e179b64e38148de5ede3360 = L.marker(
+                [28.749722, 77.116281],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_6141a6431db64f8e0f28fa5e4598ef26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e7aa66e35e179b64e38148de5ede3360.setIcon(icon_6141a6431db64f8e0f28fa5e4598ef26);
+        
+    
+        var popup_53e7e78cc7285be03aae6acb1ad2e7a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25aced10e0d264c1c85cbfde2f561004 = $(`<div id="html_25aced10e0d264c1c85cbfde2f561004" style="width: 100.0%; height: 100.0%;">             <b>📍 DTU, Delhi, Delhi, India</b><br>             <b>AQI:</b> 354.0<br>             <b>Temperature:</b> 21.176759259259264°C<br>             <b>Humidity:</b> 49.561481481481486%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_53e7e78cc7285be03aae6acb1ad2e7a4.setContent(html_25aced10e0d264c1c85cbfde2f561004);
+            
+        
+
+        marker_e7aa66e35e179b64e38148de5ede3360.bindPopup(popup_53e7e78cc7285be03aae6acb1ad2e7a4)
+        ;
+
+        
+    
+    
+            var marker_decc5a8e2ff966980e7986ecdc9e0a43 = L.marker(
+                [28.63576, 77.22445],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_f939cda146cfff35ff464eee5a387f05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_decc5a8e2ff966980e7986ecdc9e0a43.setIcon(icon_f939cda146cfff35ff464eee5a387f05);
+        
+    
+        var popup_054ddc46ff64200c8f8489087f8e2aac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6842de115f75120d3393de4eff82bfd7 = $(`<div id="html_6842de115f75120d3393de4eff82bfd7" style="width: 100.0%; height: 100.0%;">             <b>📍 New Delhi US Embassy, India; New Delhi US Embassy, India (नई दिल्ली अमेरिकी दूतावास)</b><br>             <b>AQI:</b> 95.0<br>             <b>Temperature:</b> 24.5°C<br>             <b>Humidity:</b> 34.0%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_054ddc46ff64200c8f8489087f8e2aac.setContent(html_6842de115f75120d3393de4eff82bfd7);
+            
+        
+
+        marker_decc5a8e2ff966980e7986ecdc9e0a43.bindPopup(popup_054ddc46ff64200c8f8489087f8e2aac)
+        ;
+
+        
+    
+    
+            var marker_900c44bd67f5506050fefc7903003d08 = L.marker(
+                [28.628577, 77.241036],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_b698db95b482364cd3be89713769e11e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_900c44bd67f5506050fefc7903003d08.setIcon(icon_b698db95b482364cd3be89713769e11e);
+        
+    
+        var popup_0f412a2fe0c15f5bd61cfb047d8566ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10243bde27b6c93a53e2f4cf80452949 = $(`<div id="html_10243bde27b6c93a53e2f4cf80452949" style="width: 100.0%; height: 100.0%;">             <b>📍 ITO, Delhi, Delhi, India</b><br>             <b>AQI:</b> 139.35714285714286<br>             <b>Temperature:</b> 21.176759259259264°C<br>             <b>Humidity:</b> 49.561481481481486%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_0f412a2fe0c15f5bd61cfb047d8566ab.setContent(html_10243bde27b6c93a53e2f4cf80452949);
+            
+        
+
+        marker_900c44bd67f5506050fefc7903003d08.bindPopup(popup_0f412a2fe0c15f5bd61cfb047d8566ab)
+        ;
+
+        
+    
+    
+            var marker_5146b07465891c92ba126537426a3076 = L.marker(
+                [17.384050369263, 78.456359863281],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_53a5679ec5adb70865559eaf68d6aa6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5146b07465891c92ba126537426a3076.setIcon(icon_53a5679ec5adb70865559eaf68d6aa6c);
+        
+    
+        var popup_88ff724635621df8c3c8111391464fb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_264df1ab4ca9cbee2ba10d14a3982fdc = $(`<div id="html_264df1ab4ca9cbee2ba10d14a3982fdc" style="width: 100.0%; height: 100.0%;">             <b>📍 Hyderabad US Consulate, India; Hyderabad US Consulate, India (हैदराबाद अमेरिकी वाणिज्य दूतावास)</b><br>             <b>AQI:</b> 93.0<br>             <b>Temperature:</b> 35.0°C<br>             <b>Humidity:</b> 16.0%<br>             <b>🌿 Recommended Tree:</b> Peepal (Ficus religiosa)         </div>`)[0];
+                popup_88ff724635621df8c3c8111391464fb2.setContent(html_264df1ab4ca9cbee2ba10d14a3982fdc);
+            
+        
+
+        marker_5146b07465891c92ba126537426a3076.bindPopup(popup_88ff724635621df8c3c8111391464fb2)
+        ;
+
+        
+    
+    
+            var marker_7fd46304b731eecafead4f758d764246 = L.marker(
+                [30.736056, 76.209694],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_ea6901d1bcd0090ef880ffa438a7e48f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7fd46304b731eecafead4f758d764246.setIcon(icon_ea6901d1bcd0090ef880ffa438a7e48f);
+        
+    
+        var popup_0381f6a6af52ff0f31426506c2e0ef50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b2286c8d07cdef6adbe283c1dff7b93 = $(`<div id="html_2b2286c8d07cdef6adbe283c1dff7b93" style="width: 100.0%; height: 100.0%;">             <b>📍 Kalal Majra, Khanna, India</b><br>             <b>AQI:</b> 95.0<br>             <b>Temperature:</b> 31.173333333333332°C<br>             <b>Humidity:</b> 77.93333333333334%<br>             <b>🌿 Recommended Tree:</b> Peepal (Ficus religiosa)         </div>`)[0];
+                popup_0381f6a6af52ff0f31426506c2e0ef50.setContent(html_2b2286c8d07cdef6adbe283c1dff7b93);
+            
+        
+
+        marker_7fd46304b731eecafead4f758d764246.bindPopup(popup_0381f6a6af52ff0f31426506c2e0ef50)
+        ;
+
+        
+    
+    
+            var marker_03039f16a4eae2ef2c57128e455ee224 = L.marker(
+                [18.502167, 73.927456],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_8260fe6aaa83c791391fc0dbe79f254c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_03039f16a4eae2ef2c57128e455ee224.setIcon(icon_8260fe6aaa83c791391fc0dbe79f254c);
+        
+    
+        var popup_a0ff0a982dda513d74197dcd10310cfb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2429a3710cac7e4c7559bed154b669f = $(`<div id="html_d2429a3710cac7e4c7559bed154b669f" style="width: 100.0%; height: 100.0%;">             <b>📍 Hadapsar, Pune, Pune, India</b><br>             <b>AQI:</b> 139.35714285714286<br>             <b>Temperature:</b> -20.0°C<br>             <b>Humidity:</b> 36.32333333333333%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_a0ff0a982dda513d74197dcd10310cfb.setContent(html_d2429a3710cac7e4c7559bed154b669f);
+            
+        
+
+        marker_03039f16a4eae2ef2c57128e455ee224.bindPopup(popup_a0ff0a982dda513d74197dcd10310cfb)
+        ;
+
+        
+    
+    
+            var marker_07923eaa8da417e1534fe9fe40d98dc5 = L.marker(
+                [21.152875, 79.0517531],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_6416ae10a920dfce461a8b4189b6c0e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_07923eaa8da417e1534fe9fe40d98dc5.setIcon(icon_6416ae10a920dfce461a8b4189b6c0e1);
+        
+    
+        var popup_3b4c0f6c50827546d4e10beb5111aae9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b16f4fb7fcba9a58df487e09c8a8332 = $(`<div id="html_0b16f4fb7fcba9a58df487e09c8a8332" style="width: 100.0%; height: 100.0%;">             <b>📍 Civil Lines, Nagpur, India</b><br>             <b>AQI:</b> 139.35714285714286<br>             <b>Temperature:</b> 19.0°C<br>             <b>Humidity:</b> 63.0%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_3b4c0f6c50827546d4e10beb5111aae9.setContent(html_0b16f4fb7fcba9a58df487e09c8a8332);
+            
+        
+
+        marker_07923eaa8da417e1534fe9fe40d98dc5.bindPopup(popup_3b4c0f6c50827546d4e10beb5111aae9)
+        ;
+
+        
+    
+    
+            var marker_6f23d74b0bdd1e95049841e6e946b487 = L.marker(
+                [24.762518, 84.982348],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_439c01d1ae671c672df7d5cad7fac98e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6f23d74b0bdd1e95049841e6e946b487.setIcon(icon_439c01d1ae671c672df7d5cad7fac98e);
+        
+    
+        var popup_349c18f18a2eda8c70be273904ee86bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71be79cde28f862448b0d62490319524 = $(`<div id="html_71be79cde28f862448b0d62490319524" style="width: 100.0%; height: 100.0%;">             <b>📍 SFTI Kusdihra, Gaya, India</b><br>             <b>AQI:</b> 55.0<br>             <b>Temperature:</b> 20.0°C<br>             <b>Humidity:</b> 42.864999999999995%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_349c18f18a2eda8c70be273904ee86bb.setContent(html_71be79cde28f862448b0d62490319524);
+            
+        
+
+        marker_6f23d74b0bdd1e95049841e6e946b487.bindPopup(popup_349c18f18a2eda8c70be273904ee86bb)
+        ;
+
+        
+    
+    
+            var marker_e37d06370c87483c19f6d23722f92740 = L.marker(
+                [27.554793, 76.611536],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_addb65ec68aabf3668c1105b19cbd822 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e37d06370c87483c19f6d23722f92740.setIcon(icon_addb65ec68aabf3668c1105b19cbd822);
+        
+    
+        var popup_c4ebb00a74c93b1daea1ca0942222b88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9da6bcdba00fbf112d2193fa9e79fa6 = $(`<div id="html_d9da6bcdba00fbf112d2193fa9e79fa6" style="width: 100.0%; height: 100.0%;">             <b>📍 Moti Doongri, Alwar, India</b><br>             <b>AQI:</b> 74.0<br>             <b>Temperature:</b> 21.97666666666667°C<br>             <b>Humidity:</b> 10.696666666666667%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_c4ebb00a74c93b1daea1ca0942222b88.setContent(html_d9da6bcdba00fbf112d2193fa9e79fa6);
+            
+        
+
+        marker_e37d06370c87483c19f6d23722f92740.bindPopup(popup_c4ebb00a74c93b1daea1ca0942222b88)
+        ;
+
+        
+    
+    
+            var marker_1a68de724394710850e617d28e522c80 = L.marker(
+                [26.210536, 78.171],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_e2969f0fb7982682709afa30766de753 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1a68de724394710850e617d28e522c80.setIcon(icon_e2969f0fb7982682709afa30766de753);
+        
+    
+        var popup_b41efdb80f7d6802089abe4de1f4ecb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ecbbdc67725cca66876568dcfa10cfd = $(`<div id="html_7ecbbdc67725cca66876568dcfa10cfd" style="width: 100.0%; height: 100.0%;">             <b>📍 Phool Bagh, Gwalior, India</b><br>             <b>AQI:</b> 139.35714285714286<br>             <b>Temperature:</b> 26.0°C<br>             <b>Humidity:</b> 55.1%<br>             <b>🌿 Recommended Tree:</b> Ashoka (Polyalthia longifolia)         </div>`)[0];
+                popup_b41efdb80f7d6802089abe4de1f4ecb2.setContent(html_7ecbbdc67725cca66876568dcfa10cfd);
+            
+        
+
+        marker_1a68de724394710850e617d28e522c80.bindPopup(popup_b41efdb80f7d6802089abe4de1f4ecb2)
+        ;
+
+        
+    
+    
+            var marker_bd313155b8f6ffc55cc7a01f21d78ff3 = L.marker(
+                [8.8787, 76.6073],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_f4f7aae06252dbf028a4e3c846fd79e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bd313155b8f6ffc55cc7a01f21d78ff3.setIcon(icon_f4f7aae06252dbf028a4e3c846fd79e5);
+        
+    
+        var popup_0c03682299aa991f00ac2690684a370f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c40ae5736b36d29f36f6588d812f2b55 = $(`<div id="html_c40ae5736b36d29f36f6588d812f2b55" style="width: 100.0%; height: 100.0%;">             <b>📍 Polayathode, Kollam, India</b><br>             <b>AQI:</b> 94.0<br>             <b>Temperature:</b> 30.0°C<br>             <b>Humidity:</b> 90.43333333333334%<br>             <b>🌿 Recommended Tree:</b> Peepal (Ficus religiosa)         </div>`)[0];
+                popup_0c03682299aa991f00ac2690684a370f.setContent(html_c40ae5736b36d29f36f6588d812f2b55);
+            
+        
+
+        marker_bd313155b8f6ffc55cc7a01f21d78ff3.bindPopup(popup_0c03682299aa991f00ac2690684a370f)
+        ;
+
+        
+    
+    
+            var marker_c4ffbcbc3efce402556b8464be992a7c = L.marker(
+                [28.1485564, 77.3320667],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_748de150845aebb4c1f0a85e6eed1f85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c4ffbcbc3efce402556b8464be992a7c.setIcon(icon_748de150845aebb4c1f0a85e6eed1f85);
+        
+    
+        var popup_ef05814933c4f3a327f096ee1970f8ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c057854cd9dc91b384dcf06c20ae2712 = $(`<div id="html_c057854cd9dc91b384dcf06c20ae2712" style="width: 100.0%; height: 100.0%;">             <b>📍 Shyam Nagar, Palwal, India</b><br>             <b>AQI:</b> 119.0<br>             <b>Temperature:</b> 13.623333333333333°C<br>             <b>Humidity:</b> 78.44666666666667%<br>             <b>🌿 Recommended Tree:</b> Neem (Azadirachta indica)         </div>`)[0];
+                popup_ef05814933c4f3a327f096ee1970f8ff.setContent(html_c057854cd9dc91b384dcf06c20ae2712);
+            
+        
+
+        marker_c4ffbcbc3efce402556b8464be992a7c.bindPopup(popup_ef05814933c4f3a327f096ee1970f8ff)
+        ;
+
+        
+    
+    
+            var marker_b40e3f830f627bdb6205551d7c97598e = L.marker(
+                [27.19865833, 78.00598056],
+                {
+}
+            ).addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+    
+            var icon_29ceb85440ea701bc7dcb43d6b26b30b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b40e3f830f627bdb6205551d7c97598e.setIcon(icon_29ceb85440ea701bc7dcb43d6b26b30b);
+        
+    
+        var popup_41de26b950d3db47396762f7e27c4e5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2db29341e373cbf07b70382829fe5e52 = $(`<div id="html_2db29341e373cbf07b70382829fe5e52" style="width: 100.0%; height: 100.0%;">             <b>📍 Sanjay Palace, Agra, India</b><br>             <b>AQI:</b> 158.0<br>             <b>Temperature:</b> 27.975°C<br>             <b>Humidity:</b> 34.75%<br>             <b>🌿 Recommended Tree:</b> Mango (Mangifera indica)         </div>`)[0];
+                popup_41de26b950d3db47396762f7e27c4e5d.setContent(html_2db29341e373cbf07b70382829fe5e52);
+            
+        
+
+        marker_b40e3f830f627bdb6205551d7c97598e.bindPopup(popup_41de26b950d3db47396762f7e27c4e5d)
+        ;
+
+        
+    
+    
+            var heat_map_3e6736c176060a6372df005faad6f19e = L.heatLayer(
+                [[28.815691, 77.152491, 163.0], [28.820629, 77.101099, 168.0], [28.61104167, 77.03733056, 139.35714285714286], [28.68241, 77.030469, 171.0], [28.68189167, 77.30485833, 139.35714285714286], [28.5648, 77.1744, 154.0], [28.636997, 77.172248, 158.0], [28.749722, 77.116281, 354.0], [28.63576, 77.22445, 95.0], [28.628577, 77.241036, 139.35714285714286], [17.384050369263, 78.456359863281, 93.0], [30.736056, 76.209694, 95.0], [18.502167, 73.927456, 139.35714285714286], [21.152875, 79.0517531, 139.35714285714286], [24.762518, 84.982348, 55.0], [27.554793, 76.611536, 74.0], [26.210536, 78.171, 139.35714285714286], [8.8787, 76.6073, 94.0], [28.1485564, 77.3320667, 119.0], [27.19865833, 78.00598056, 158.0]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 20,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_3e6736c176060a6372df005faad6f19e.addTo(map_2eb20aa042788bb2b5f8af6a2741a830);
+        
+</script>
+</html>
